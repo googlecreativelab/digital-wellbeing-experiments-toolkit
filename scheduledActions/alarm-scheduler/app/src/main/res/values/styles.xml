@@ -1,0 +1,65 @@
+<!--
+ Copyright 2019 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:background">@drawable/day_button_bg</item>
+    </style>
+
+    <style name="toggleButton" parent="AppTheme">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:textColor">@drawable/day_button_text_colour</item>
+        <item name="android:background">@drawable/day_button_bg</item>
+    </style>
+
+    <style name="time_picker_spinner_style" parent="@android:style/Widget.Material.TimePicker">
+        <!--https://www.zoftino.com/android-timepicker-example-->
+        <item name="android:headerBackground">#ffe082</item>
+        <item name="android:numbersTextColor">#b71c1c</item>
+        <item name="android:numbersInnerTextColor">#f44336</item>
+        <item name="android:numbersSelectorColor">#33691e</item>
+        <item name="android:numbersBackgroundColor">#ef9a9a</item>
+        <item name="android:amPmTextColor">#9c27b0</item>
+        <item name="android:textColorSecondary">#b71c1c</item>
+        <item name="android:textColorPrimaryDisableOnly">#b71c1c</item>
+        <item name="android:theme">@style/time_picker_spinner_style</item>
+
+        <!-- disable keyboard entry (tap on time and keyboard pops up) -->
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <!-- changes divider lines -->
+        <item name="colorControlNormal">@android:color/transparent</item>
+        <item name="android:textSize">32sp</item>
+        <!-- changes the ":" separator -->
+        <!--        <item name="android:textColor">@color/text_colour</item>-->
+        <!-- changes numbers (hours, mins) colours -->
+        <!--        <item name="android:textColorPrimary">@color/text_colour</item>-->
+        <!--        <item name="android:layout_marginTop">@dimen/time_picker_spinner_spacing_vert</item>-->
+        <!--        <item name="android:layout_marginBottom">@dimen/time_picker_spinner_spacing_vert</item>-->
+
+        <!--        <item name="android:fontFamily">@font/archivo_bold</item>-->
+
+    </style>
+
+</resources>

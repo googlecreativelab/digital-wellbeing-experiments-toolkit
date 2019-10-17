@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2019 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setup_spacing_vert"
+        android:text="@string/set_alarm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/setup_spacing_vert"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <ToggleButton
+        android:id="@+id/btn_mon"
+        style="@style/toggleButton"
+        android:layout_width="@dimen/day_button_size"
+        android:layout_height="@dimen/day_button_size"
+        android:layout_marginEnd="@dimen/day_button_spacing"
+        android:textOff="@string/day_m"
+        android:textOn="@string/day_m"
+        app:layout_constraintBottom_toBottomOf="@id/btn_tues"
+        app:layout_constraintEnd_toStartOf="@id/btn_tues"
+        app:layout_constraintTop_toTopOf="@id/btn_tues" />
+
+    <ToggleButton
+        android:id="@+id/btn_tues"
+        style="@style/toggleButton"
+        android:layout_width="@dimen/day_button_size"
+        android:layout_height="@dimen/day_button_size"
+        android:layout_marginEnd="@dimen/day_button_spacing"
+        android:textOff="@string/day_t"
+        android:textOn="@string/day_t"
+        app:layout_constraintBottom_toBottomOf="@id/btn_weds"
+        app:layout_constraintEnd_toStartOf="@id/btn_weds"
+        app:layout_constraintTop_toTopOf="@id/btn_weds" />
+
+    <ToggleButton
+        android:id="@+id/btn_weds"
+        style="@style/toggleButton"
+        android:layout_width="@dimen/day_button_size"
+        android:layout_height="@dimen/day_button_size"
+        android:layout_marginEnd="@dimen/day_button_spacing"
+        android:textOff="@string/day_w"
+        android:textOn="@string/day_w"
+        app:layout_constraintBottom_toBottomOf="@id/btn_thurs"
+        app:layout_constraintEnd_toStartOf="@id/btn_thurs"
+        app:layout_constraintTop_toTopOf="@id/btn_thurs" />
+
+    <ToggleButton
+        android:id="@+id/btn_thurs"
+        style="@style/toggleButton"
+        android:layout_width="@dimen/day_button_size"
+        android:layout_height="@dimen/day_button_size"
+        android:layout_marginTop="@dimen/setup_spacing_vert"
+        android:textOff="@string/day_t"
+        android:textOn="@string/day_t"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_picker" />
+
+    <ToggleButton
+        android:id="@+id/btn_fri"
+        style="@style/toggleButton"
+        android:layout_width="@dimen/day_button_size"
+        android:layout_height="@dimen/day_button_size"
+        android:layout_marginStart="@dimen/day_button_spacing"
+        android:textOff="@string/day_f"
+        android:textOn="@string/day_f"
+        app:layout_constraintBottom_toBottomOf="@id/btn_thurs"
+        app:layout_constraintStart_toEndOf="@id/btn_thurs"
+        app:layout_constraintTop_toTopOf="@id/btn_thurs" />
+
+    <ToggleButton
+        android:id="@+id/btn_sat"
+        style="@style/toggleButton"
+        android:layout_width="@dimen/day_button_size"
+        android:layout_height="@dimen/day_button_size"
+        android:layout_marginStart="@dimen/day_button_spacing"
+        android:textOff="@string/day_s"
+        android:textOn="@string/day_s"
+        app:layout_constraintBottom_toBottomOf="@id/btn_thurs"
+        app:layout_constraintStart_toEndOf="@id/btn_fri"
+        app:layout_constraintTop_toTopOf="@id/btn_thurs" />
+
+    <ToggleButton
+        android:id="@+id/btn_sun"
+        style="@style/toggleButton"
+        android:layout_width="@dimen/day_button_size"
+        android:layout_height="@dimen/day_button_size"
+        android:layout_marginStart="@dimen/day_button_spacing"
+        android:textOff="@string/day_s"
+        android:textOn="@string/day_s"
+        app:layout_constraintBottom_toBottomOf="@id/btn_thurs"
+        app:layout_constraintStart_toEndOf="@id/btn_sat"
+        app:layout_constraintTop_toTopOf="@id/btn_thurs" />
+
+    <Button
+        android:id="@+id/btn_add_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/setup_spacing_vert"
+        android:text="@string/save_alarm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

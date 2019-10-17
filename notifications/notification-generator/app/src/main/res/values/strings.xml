@@ -1,0 +1,27 @@
+<!--
+ Copyright 2019 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+    <string name="app_name">Notification Generator</string>
+    <string name="action_settings">Settings</string>
+    <string name="enabled_checkbox_text">Enable Notifications</string>
+    <string name="preference_file">notification_preferences</string>
+
+    <string name="frequency_label">Frequency</string>
+    <string name="frequency_value">%ds</string>
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat tellus posuere vestibulum posuere. Suspendisse sagittis arcu eu magna tristique, vel interdum tortor bibendum. Nunc eu lacus mattis, varius metus vitae, sagittis justo. Aenean urna erat, facilisis quis congue a, rhoncus vel mauris. Mauris laoreet in massa eget tempus. Morbi ut metus interdum, elementum tortor vitae, convallis augue. Duis finibus arcu vitae finibus congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent est ipsum, sagittis a euismod vitae, consectetur et ante. Proin dictum nisl et pretium molestie. Ut lobortis nulla enim, at imperdiet nisi tristique nec. Proin vitae massa sagittis, vestibulum tortor vitae, ultrices libero. Quisque non mollis erat. Integer pharetra vel ipsum vitae elementum. Morbi non pretium urna, at consequat tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi cursus augue in enim imperdiet, et consequat enim aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at tincidunt risus. Maecenas condimentum neque ut felis dictum rutrum. Donec quis aliquam dolor, non mollis ipsum. Duis sodales eu risus quis blandit. Nunc at odio non ligula dapibus condimentum sit amet vel orci. Maecenas malesuada metus vitae erat lacinia posuere. Sed tristique quis lorem lobortis varius. Maecenas bibendum convallis massa, at auctor nunc. Pellentesque ut suscipit tortor. Morbi sed aliquet turpis. Praesent maximus velit porta convallis consectetur. Suspendisse viverra odio id lectus ullamcorper, mattis vehicula magna aliquam. Nulla pharetra tellus nec velit maximus ultrices. Cras vestibulum erat sit amet orci aliquet egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</string>
+</resources>

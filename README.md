@@ -25,7 +25,7 @@ How could apps use copresence to be more respectful of users spending time toget
 
 [Morph](https://experiments.withgoogle.com/morph) is an experiment that helps users stay focussed by adapting their phones to what they're doing, by letting them set up different 'Modes' for the different modes of their life. Each Mode is defined as a collection of apps, and a user defined 'trigger', which can be either a time or a place. This experiment used the [Google Maps Places SDK](https://developers.google.com/places/android-sdk/start) and the [Location & GeoFence APIs](https://developer.android.com/training/location/geofencing) to switch its functionality based on the user's context, setting triggers for different states based on a user's location. 
 
-The example code in the [`geolocation/`](geolocation/) directory shows how the state of an app can be updated by a simple geolocation watcher class. In this example, the location simply changes the background of the screen, but could be mapped to any aspect of an application. 
+The example code in the [`geolocation/`](geolocation/) directory shows how the state of an app can be updated by a simple geolocation watcher class. In this example, the location simply triggers a change in the app UI, but could be mapped to any aspect of a full-featured application. 
 
 How could changing the functionality of an app based on context help users to focus better on their usage?
 
@@ -72,7 +72,7 @@ How else could a live wallpaper help a user to be more conscious of their tech u
 
 Our phones are always-on, always-connected computers, able to update and notify users of new developments and incoming information in real time. However, live data feeds and streaming messages can be both unpredictable and disruptive to users. Using the [Alarm Manager API](https://developer.android.com/training/scheduling/alarms), your app can defer actions until a scheduled point in the future, rather than interrupting a user with notifications.
 
-In [Morph](https://experiments.withgoogle.com/morph), these timers are used to trigger mode changes in the background, with no need for user input; and in Post Box, they are used to trigger a delivery of notifications at a regular interval.
+In [Morph](https://experiments.withgoogle.com/morph), these timers are used to trigger mode changes in the background, with no need for user input; and in [Post Box](https://experiments.withgoogle.com/post-box), they are used to trigger a delivery of notifications at a regular interval.
 
 The [`scheduledActions`](scheduledActions/) directory contains an example project which demonstrates how an app can schedule functionality for future, more appropriate time for the user. 
 

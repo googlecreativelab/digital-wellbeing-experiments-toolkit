@@ -1,6 +1,6 @@
 # Digital Wellbeing Experiments toolkit
 
-![Digital Wellbeing Hero Image](img/Toolkit_Hero.png)
+![Digital Wellbeing Hero Image](img/Toolkit_Hero.jpg)
 
 This repository contains example code for some of the Android features used to create Experiments for the [Digital Wellbeing](https://experiments.withgoogle.com/digitalwellbeing) collection on the [Experiments with Google](https://experiments.withgoogle.com) site. Each directory contains a simple building block that you could use to start creating your own Digital Wellbeing Experiment, or integrate into an existing project.
 

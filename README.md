@@ -39,7 +39,7 @@ There are three example applications in the [`notifications/`](notifications/) d
 
 The first demonstrates how to create a notification listener service which uses notification access permissions to receive all incoming notifications, add them to a database, and present them in a simple list view to the user. 
 
-The second demonstrates how to use the snooze functionality of the Notifications API, which pauses delivery of a notification until a later time. Any notifications received while the app is on screen can be paused for 60 seconds, or allowed to pass through to the OS notification system. This was used in the Morph experiment to pause delivery of notofications from apps outside of a user's current mode.
+The second demonstrates how to use the snooze functionality of the Notifications API, which pauses delivery of a notification until a later time. Any notifications received while the app is on screen can be paused for 60 seconds, or allowed to pass through to the OS notification system. This was used in the Morph experiment to pause delivery of notifications from apps outside of a user's current mode.
 
 Finally, a simple notification generator is included for testing your new notification handling experiment.
 
